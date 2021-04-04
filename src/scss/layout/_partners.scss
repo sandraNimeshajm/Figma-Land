@@ -1,0 +1,114 @@
+.partners {
+  background-color: $dark;
+  padding: 80px 16px;
+  @include mq(1921, min) {
+    padding: 4.166666667vw 0.8333333333vw;
+  }
+  @include mq(768) {
+    padding: 48px 16px;
+  }
+}
+
+.partners__container {
+  max-width: 830px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  @include mq(1921, min) {
+    max-width: 43.22916667vw;
+  }
+}
+
+.partners__content {
+  margin-bottom: 60px;
+  @include mq(1921, min) {
+    margin-bottom: 3.125vw;
+  }
+  @include mq(768) {
+    margin-bottom: 40px;
+  }
+}
+
+.partners__content-title {
+  margin-bottom: 10px;
+  @include mq(1921, min) {
+    margin-bottom: 0.520833vw;
+  }
+}
+
+.partners__content-text {
+  color: $white;
+  font-size: 20px;
+  line-height: 1.5;
+  max-width: 550px;
+  width: 100%;
+  text-align: center;
+  @include mq(1921, min) {
+    font-size: 1.041666667vw;
+    max-width: 28.645833vw;
+  }
+  @include mq(768) {
+    font-size: 18px;
+  }
+}
+
+.partners__items {
+  max-width: 832px;
+  width: 100%;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @include mq(1921, min) {
+    max-width: 43.33vw;
+    margin-bottom: 2.604166667vw;
+  }
+  @include mq(991) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+  }
+
+  svg {
+    margin-right: 74px;
+    @include mq(1921, min) {
+      margin-right: 3.854166667vw;
+      max-height: 3.125vw;
+      height: 100vh;
+      width: 100%;
+    }
+    @include mq(991) {
+      margin-right: 0;
+      margin-bottom: 74px;
+      justify-self: center;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.partners__btn {
+}
+
+.swiper-container-free-mode > .swiper-wrapper {
+  transition-timing-function: linear;
+}
+
+.partners__items-swiper-wrapper {
+  -webkit-transition-timing-function: linear !important;
+  -o-transition-timing-function: linear !important;
+  transition-timing-function: linear !important;
+
+  .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

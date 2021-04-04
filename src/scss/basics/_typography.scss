@@ -1,0 +1,49 @@
+/*--------------------------------------------------------------
+## Typography
+--------------------------------------------------------------*/
+.page-title {
+  font-size: 80px;
+  line-height: 1.1;
+  font-weight: 500;
+  text-align: center;
+  color: $white;
+
+  @include mq(1921, min) {
+    font-size: 4.166666667vw;
+  }
+  @include mq(991) {
+    font-size: 60px;
+  }
+
+  @include mq(700) {
+    font-size: 50px;
+  }
+}
+
+.section-title {
+  font-size: 52px;
+  line-height: 1.2;
+  font-weight: 400;
+  text-align: center;
+  color: $white;
+
+  @include mq(1921, min) {
+    font-size: 2.708333333vw;
+  }
+
+  @include mq(991) {
+    font-size: 32px;
+  }
+}
+
+.page-title--small {
+  font-size: 20px;
+  line-height: 1.5;
+  color: $white;
+  @include mq(1921, min) {
+    font-size: 1.041666667vw;
+  }
+  @include mq(991) {
+    font-size: 16px;
+  }
+}

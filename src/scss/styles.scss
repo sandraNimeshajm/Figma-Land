@@ -1,0 +1,35 @@
+// TOOLS
+
+
+
+// HELPERS
+@import "./helpers/reset";
+@import 'normalize.css/normalize';
+@import "./helpers/mixins";
+@import "./helpers/variables";
+@import "./helpers/functions";
+@import 'magnific-popup/dist/magnific-popup';
+@import 'swiper/swiper-bundle';
+
+// BASICS
+@import "./basics/base";
+@import "./basics/animations";
+@import "./basics/buttons";
+@import "./basics/fonts";
+@import "./basics/links";
+@import "./basics/typography";
+
+// LAYOUT
+@import "./layout/header";
+@import "./layout/banner";
+@import "./layout/features";
+@import "./layout/contents";
+@import "./layout/gallery";
+@import "./layout/partners";
+@import "./layout/testimonials";
+@import "./layout/cta";
+@import "./layout/footer";
+
+// MODULES
+@import "./modules/nav";
+

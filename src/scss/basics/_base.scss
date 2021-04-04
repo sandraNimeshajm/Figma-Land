@@ -1,0 +1,37 @@
+/*--------------------------------------------------------------
+## Base Layout
+--------------------------------------------------------------*/
+
+html,
+body {
+  background-color: $dark;
+  @include font-smoothing(antialiased);
+  min-height: 100%;
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  @include mq(1921, min) {
+    font-size: 0.833vw;
+  }
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+// .container {
+//   position: relative;
+// }
+// .reveal {
+//   visibility: hidden;
+//   position: relative;
+//   width: 80%;
+//   height: 80%;
+//   max-width: 500px;
+//   overflow: hidden;
+// }

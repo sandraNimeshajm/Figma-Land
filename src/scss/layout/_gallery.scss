@@ -1,0 +1,162 @@
+.gallery {
+  background-color: $dark;
+  padding: 80px 16px;
+  @include mq(1921, min) {
+    padding: 4.166666667vw 0.8333333333vw;
+  }
+  @include mq(768) {
+    padding: 48px 16px;
+  }
+}
+
+.gallery__container {
+  max-width: 1090px;
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @include mq(1921, min) {
+    max-width: 56.770833vw;
+  }
+}
+
+.gallery__content {
+  margin-bottom: 54px;
+  @include mq(1921, min) {
+    margin-bottom: 2.8125vw;
+  }
+  @include mq(768) {
+    margin-bottom: 34px;
+  }
+}
+
+.gallery__content-title {
+  margin-bottom: 10px;
+  @include mq(1921, min) {
+    margin-bottom: 0.520833vw;
+  }
+}
+
+.gallery__content-text {
+  width: 100%;
+  max-width: 525px;
+  font-size: 20px;
+  line-height: 1.5;
+  color: $white;
+  text-align: center;
+  @include mq(1921, min) {
+    max-width: 27.34375vw;
+    font-size: 1.041666667vw;
+  }
+  @include mq(768) {
+    font-size: 18px;
+  }
+}
+
+.gallery__items {
+  width: 100%;
+  margin-bottom: 44px;
+  @include mq(1921, min) {
+    margin-bottom: 2.291666667vw;
+  }
+  @include mq(1030) {
+    text-align: center;
+  }
+}
+
+.gallery__items-top {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+  grid-gap: 33px;
+  margin-bottom: 44px;
+  @include mq(1921, min) {
+    grid-template-columns: repeat(auto-fit, minmax(11.71875vw, 1fr));
+    grid-gap: 1.71875vw;
+    margin-bottom: 2.291666667vw;
+  }
+}
+
+.gallery__items-bottom {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 33px;
+  @include mq(1921, min) {
+    grid-gap: 1.71875vw;
+  }
+  @include mq(1030) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .gallery__item {
+    @include mq(1921, min) {
+      max-height: 14.843vw;
+      height: 100vh;
+      width: auto;
+    }
+  }
+}
+
+.gallery__item {
+  border-radius: 10px;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+  @include mq(1921, min) {
+    border-radius: 0.520833vw;
+    filter: drop-shadow(0 0.20833vw 0.20833vw rgba(0, 0, 0, 0.25));
+    width: 100%;
+  }
+}
+
+.gallery__btn {
+}
+
+//magnific popup
+
+/* This block of CSS adds opacity transition to background */
+.mfp-with-zoom .mfp-container,
+.mfp-with-zoom.mfp-bg {
+  opacity: 0;
+  -webkit-backface-visibility: hidden;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.mfp-with-zoom.mfp-ready .mfp-container {
+  opacity: 1;
+}
+.mfp-with-zoom.mfp-ready.mfp-bg {
+  opacity: 0.8;
+}
+
+.mfp-with-zoom.mfp-removing .mfp-container,
+.mfp-with-zoom.mfp-removing.mfp-bg {
+  opacity: 0;
+}
+
+/* padding-bottom and top for image */
+.mfp-no-margins img.mfp-img {
+  padding: 0;
+}
+/* position of shadow behind the image */
+.mfp-no-margins .mfp-figure:after {
+  top: 0;
+  bottom: 0;
+}
+/* padding for main container */
+.mfp-no-margins .mfp-container {
+  padding: 0;
+}
+
+/* aligns caption to center */
+.mfp-title {
+  text-align: center;
+  padding: 6px 0;
+}
+.image-source-link {
+  color: #ddd;
+}
