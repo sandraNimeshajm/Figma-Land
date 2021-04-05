@@ -1,6 +1,5 @@
-/*--------------------------------------------------------------
-## Buttons
---------------------------------------------------------------*/
+/*Buttons*/
+
 .btn {
   padding: 13px 46px;
   font-size: 17px;
@@ -11,6 +10,7 @@
   outline: none;
   position: relative;
   transition: all 0.3s;
+
   @include mq(1921, min) {
     padding: 0.6770833333vw 2.39583vw;
     font-size: 0.8854166667vw;
@@ -20,10 +20,10 @@
 
 .btn--ghost {
   background-color: transparent;
-  -webkit-tap-highlight-color: transparent;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
   transition: all 0.3s;
+
   @include mq(1921, min) {
     box-shadow: 0 0 0.0520833vw transparent;
   }
@@ -50,10 +50,10 @@
 .btn--full {
   background-color: $purple;
   border: 1px solid $purple;
-  -webkit-tap-highlight-color: transparent;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
   transition: all 0.3s;
+
   @include mq(1921, min) {
     border: 0.0520833vw solid $purple;
     box-shadow: 0 0 0.0520833vw transparent;
@@ -90,6 +90,7 @@
   49.95% {
     transform: translateX(4px);
   }
+
   66.6% {
     transform: translateX(-2px);
   }
@@ -97,7 +98,7 @@
   83.25% {
     transform: translateX(1px);
   }
-  
+
   100% {
     transform: translateX(0);
   }

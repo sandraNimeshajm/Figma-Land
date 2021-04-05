@@ -632,30 +632,23 @@ template {
 
 /*
 	Example:
-	-------------------------------------------------------------------------------------------------
 	@include mq($phone) 			 	@media screen and (max-width: 640px)
-	-------------------------------------------------------------------------------------------------
+	
 	@include mq(991) 			 	 	@media screen and (max-width: 991px)
-	-------------------------------------------------------------------------------------------------
+	
 	@include mq($phone + 1, min) 	 	@media screen and (min-width: 641px)
-	-------------------------------------------------------------------------------------------------
+	
 	@include mq(992, min) 			 	@media screen and (min-width: 992px)
-	-------------------------------------------------------------------------------------------------
+	
 	@include mq(400, min, height) 	 	@media screen and (min-height: 400px)
-	-------------------------------------------------------------------------------------------------
+
 	@include mq(992) {				 	@media screen and (max-width: 992px) and (min-width: 767px)
 		@include mq(767, min) {
 
 		}
 	}
-	-------------------------------------------------------------------------------------------------
  */
-/*--------------------------------------------------------------
-## Variables
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
-## Functions
---------------------------------------------------------------*/
+/*Functions*/
 /* Magnific Popup CSS */
 .mfp-bg {
   top: 0;
@@ -1742,18 +1735,16 @@ button.swiper-pagination-bullet {
   backface-visibility: hidden;
 }
 
-/*--------------------------------------------------------------
-## Base Layout
---------------------------------------------------------------*/
+/* Base Layout*/
 html,
 body {
-  background-color: #181818;
   -webkit-font-smoothing: antialiased;
   -moz-font-smoothing: antialiased;
   -ms-font-smoothing: antialiased;
   -o-font-smoothing: antialiased;
+  background-color: #181818;
   min-height: 100%;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   position: relative;
 }
 
@@ -1774,12 +1765,8 @@ html {
   box-sizing: inherit;
 }
 
-/*--------------------------------------------------------------
-## Animations
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
-## Buttons
---------------------------------------------------------------*/
+/* Animations*/
+/*Buttons*/
 .btn {
   padding: 13px 46px;
   font-size: 17px;
@@ -1802,7 +1789,6 @@ html {
 
 .btn--ghost {
   background-color: transparent;
-  -webkit-tap-highlight-color: transparent;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
   transition: all 0.3s;
@@ -1840,7 +1826,6 @@ html {
 .btn--full {
   background-color: #4452fe;
   border: 1px solid #4452fe;
-  -webkit-tap-highlight-color: transparent;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
   transition: all 0.3s;
@@ -1897,50 +1882,44 @@ html {
   }
 }
 
-/*--------------------------------------------------------------
-## Fonts
---------------------------------------------------------------*/
+/*Fonts*/
 @font-face {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   src: url("../fonts/Montserrat-Medium.woff2") format("woff2"), url("../fonts/Montserrat-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   src: url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   src: url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Red Hat Display";
+  font-family: 'Red Hat Display';
   src: url("../fonts/RedHatDisplay-Regular.woff2") format("woff2"), url("../fonts/RedHatDisplay-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Red Hat Display";
+  font-family: 'Red Hat Display';
   src: url("../fonts/RedHatDisplay-Bold.woff2") format("woff2"), url("../fonts/RedHatDisplay-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
 }
 
-/*--------------------------------------------------------------
-## Links
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
-## Typography
---------------------------------------------------------------*/
+/*Links*/
+/*Typography*/
 .page-title {
   font-size: 80px;
   line-height: 1.1;
@@ -2026,8 +2005,6 @@ html {
 }
 
 .header.sticky {
-  background: #614385;
-  background: -webkit-linear-gradient(to right, #516395, #614385);
   background: linear-gradient(to right, #516395, #614385);
   padding: 5px 16px;
 }
@@ -2158,7 +2135,7 @@ html {
     height: 100vh;
     position: absolute;
     top: 0;
-    right: -400px;
+    right: -100%;
     padding: 90px;
     background: #181818;
     transition: all 0.3s;
@@ -2839,6 +2816,12 @@ html {
   }
 }
 
+@media screen and (max-width: 1030px) {
+  .gallery__items-top {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
 .gallery__items-bottom {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -2853,9 +2836,7 @@ html {
 
 @media screen and (max-width: 1030px) {
   .gallery__items-bottom {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
@@ -2884,10 +2865,7 @@ html {
 .mfp-with-zoom .mfp-container,
 .mfp-with-zoom.mfp-bg {
   opacity: 0;
-  -webkit-backface-visibility: hidden;
-  -webkit-transition: all 0.3s ease-out;
-  -moz-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
+  webkit-backface-visibility: hidden;
   transition: all 0.3s ease-out;
 }
 
@@ -2927,7 +2905,7 @@ html {
 }
 
 .image-source-link {
-  color: #ddd;
+  color: #dedede;
 }
 
 .partners {
@@ -3067,9 +3045,7 @@ html {
 }
 
 .partners__items-swiper-wrapper {
-  -webkit-transition-timing-function: linear !important;
-  -o-transition-timing-function: linear !important;
-  transition-timing-function: linear !important;
+  transition-timing-function: linear;
 }
 
 .partners__items-swiper-wrapper .swiper-slide {
@@ -3130,13 +3106,13 @@ html {
 .testimonials__items {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 23px;
+  grid-gap: 23px;
 }
 
 @media screen and (min-width: 1921px) {
   .testimonials__items {
     grid-template-columns: repeat(auto-fit, minmax(15.625vw, 1fr));
-    gap: 1.197916667vw;
+    grid-gap: 1.197916667vw;
   }
 }
 
@@ -3245,6 +3221,7 @@ html {
     justify-content: center;
     align-items: center;
     background-color: #181818;
+    padding-left: 0;
   }
 }
 
@@ -3470,7 +3447,7 @@ html {
   }
 }
 
-.footer__left-list-link:after {
+.footer__left-list-link::after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -3484,18 +3461,18 @@ html {
 }
 
 @media screen and (min-width: 1921px) {
-  .footer__left-list-link:after {
+  .footer__left-list-link::after {
     height: 0.15625vw;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .footer__left-list-link:after {
+  .footer__left-list-link::after {
     background-color: #181818;
   }
 }
 
-.footer__left-list-link:hover:after {
+.footer__left-list-link:hover::after {
   transform: scaleX(1);
 }
 
@@ -3621,6 +3598,7 @@ html {
 .nav__list {
   display: flex;
   align-items: center;
+  transition: all 0.3s;
 }
 
 @media screen and (max-width: 991px) {
@@ -3629,7 +3607,6 @@ html {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    transition: all 0.3s;
   }
 }
 
@@ -3640,6 +3617,7 @@ html {
 @media screen and (min-width: 1921px) {
   .nav__list-item {
     margin-right: 7.34375vw;
+    transition: all 0.3s;
   }
 }
 
@@ -3647,7 +3625,6 @@ html {
   .nav__list-item {
     margin-right: 0;
     margin-bottom: 16px;
-    transition: all 0.3s;
   }
 }
 
@@ -3668,8 +3645,8 @@ html {
   }
 }
 
-.nav__list-link:after {
-  content: "";
+.nav__list-link::after {
+  content: '';
   position: absolute;
   bottom: 0;
   left: 0;
@@ -3682,17 +3659,17 @@ html {
 }
 
 @media screen and (min-width: 1921px) {
-  .nav__list-link:after {
+  .nav__list-link::after {
     height: 0.15625vw;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .nav__list-link:after {
+  .nav__list-link::after {
     background-color: #181818;
   }
 }
 
-.nav__list-link:hover:after {
+.nav__list-link:hover::after {
   transform: scaleX(1);
 }

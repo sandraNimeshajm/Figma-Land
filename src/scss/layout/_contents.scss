@@ -1,8 +1,10 @@
 .contents {
   padding: 80px 16px;
+
   @include mq(1921, min) {
     padding: 4.166666667vw 0.8333333333vw;
   }
+
   @include mq(768) {
     padding: 48px 16px;
   }
@@ -16,6 +18,7 @@
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+
   @include mq(1921, min) {
     max-width: 51.302083vw;
   }
@@ -23,6 +26,7 @@
 
 .contents__content {
   margin-bottom: 54px;
+
   @include mq(1921, min) {
     margin-bottom: 2.8125vw;
   }
@@ -34,6 +38,7 @@
 
 .contents__content-title {
   margin-bottom: 10px;
+
   @include mq(1921, min) {
     margin-bottom: 0.520833vw;
   }
@@ -47,10 +52,12 @@
   font-weight: 500;
   line-height: 1.5;
   text-align: center;
+
   @include mq(1921, min) {
     max-width: 27.34375vw;
     font-size: 1.041666667vw;
   }
+
   @include mq(768) {
     font-size: 18px;
   }
@@ -58,6 +65,7 @@
 
 .contents__cards {
   display: flex;
+
   @include mq(991) {
     flex-direction: column;
     justify-content: center;
@@ -73,7 +81,7 @@
   max-width: 476px;
   width: 100%;
   padding: 50px 48px 40px;
-  box-shadow: 0 4px 31px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 31px $black-1;
   border-radius: 10px;
   margin-right: 33px;
   text-align: center;
@@ -85,7 +93,7 @@
   @include mq(1921, min) {
     max-width: 24.79166667vw;
     padding: 2.604166667vw 2.5vw 2.083333333vw;
-    box-shadow: 0 0.2083333333vw 1.6145833vw rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0.2083333333vw 1.6145833vw $black-1;
     border-radius: 0.52083vw;
     margin-right: 1.71875vw;
   }
@@ -93,6 +101,7 @@
   @include mq(991) {
     margin-right: 0;
     margin-bottom: 24px;
+
     &:last-child {
       margin-bottom: 0;
     }
@@ -107,6 +116,7 @@
   margin-bottom: 20px;
   color: $black;
   font-weight: 700;
+
   @include mq(1921, min) {
     margin-bottom: 1.041666667vw;
   }
@@ -117,6 +127,7 @@
   width: 100%;
   font-weight: 1.5;
   margin-bottom: 67px;
+
   @include mq(1921, min) {
     max-width: 13.02083333vw;
     margin-bottom: 3.489583vw;
@@ -126,13 +137,16 @@
 .contents__cards-item-btn {
   margin-bottom: 30px;
   transition: all 0.3s;
+
   &:hover {
     border: 1px solid $purple;
     color: $purple;
+
     @include mq(1921, min) {
       border: 0.0520833vw solid $purple;
     }
   }
+
   @include mq(1921, min) {
     margin-bottom: 1.5625vw;
   }
@@ -140,6 +154,7 @@
 
 .contents__cards-item-img {
   margin-top: auto;
+
   @include mq(500) {
     max-width: 280px;
     width: 100%;

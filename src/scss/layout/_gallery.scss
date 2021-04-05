@@ -27,6 +27,7 @@
   @include mq(1921, min) {
     margin-bottom: 2.8125vw;
   }
+
   @include mq(768) {
     margin-bottom: 34px;
   }
@@ -76,6 +77,9 @@
     grid-gap: 1.71875vw;
     margin-bottom: 2.291666667vw;
   }
+  @include mq(1030) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 .gallery__items-bottom {
@@ -86,9 +90,7 @@
     grid-gap: 1.71875vw;
   }
   @include mq(1030) {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    grid-template-columns: repeat(1, 1fr);
   }
 
   .gallery__item {
@@ -102,27 +104,19 @@
 
 .gallery__item {
   border-radius: 10px;
-  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+  filter: drop-shadow(0 4px 4px $black-1);
+
   @include mq(1921, min) {
     border-radius: 0.520833vw;
-    filter: drop-shadow(0 0.20833vw 0.20833vw rgba(0, 0, 0, 0.25));
+    filter: drop-shadow(0 0.20833vw 0.20833vw $black-1);
     width: 100%;
   }
 }
 
-.gallery__btn {
-}
-
-//magnific popup
-
-/* This block of CSS adds opacity transition to background */
 .mfp-with-zoom .mfp-container,
 .mfp-with-zoom.mfp-bg {
   opacity: 0;
-  -webkit-backface-visibility: hidden;
-  -webkit-transition: all 0.3s ease-out;
-  -moz-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
+  backface-visibility: hidden;
   transition: all 0.3s ease-out;
 }
 
@@ -142,11 +136,13 @@
 .mfp-no-margins img.mfp-img {
   padding: 0;
 }
+
 /* position of shadow behind the image */
-.mfp-no-margins .mfp-figure:after {
+.mfp-no-margins .mfp-figure::after {
   top: 0;
   bottom: 0;
 }
+
 /* padding for main container */
 .mfp-no-margins .mfp-container {
   padding: 0;
@@ -157,6 +153,7 @@
   text-align: center;
   padding: 6px 0;
 }
+
 .image-source-link {
-  color: #ddd;
+  color: $light;
 }

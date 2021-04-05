@@ -35,10 +35,10 @@
 .testimonials__items {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 23px;
+  grid-gap: 23px;
   @include mq(1921, min) {
     grid-template-columns: repeat(auto-fit, minmax(15.625vw, 1fr));
-    gap: 1.197916667vw;
+    grid-gap: 1.197916667vw;
   }
 }
 

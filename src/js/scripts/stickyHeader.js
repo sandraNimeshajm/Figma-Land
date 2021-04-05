@@ -1,4 +1,5 @@
 import $ from 'jquery';
+
 const stickyHeader = () => {
   const header = document.querySelector('.js-header');
   const sticky = header.offsetTop;

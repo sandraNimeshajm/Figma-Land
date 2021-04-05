@@ -73,10 +73,12 @@
   @include mq(991) {
     margin-right: 0;
     margin-bottom: 24px;
+
     &:last-child {
       margin-bottom: 0;
     }
   }
+
   &:last-child {
     margin-right: 0;
   }
@@ -94,9 +96,6 @@
   height: 100vh;
   max-height: 841px;
   z-index: 1;
-
-  @include mq(1420) {
-  }
 
   @include mq(1921, min) {
     max-width: 80.833vw;
