@@ -4,6 +4,9 @@
   @include mq(1921, min) {
     padding: 0 0.8333vw 7.8125vw;
   }
+  @include mq(1200) {
+    padding: 0 16px 96px;
+  }
   @include mq(768) {
     padding: 0 16px 80px;
   }
@@ -85,20 +88,11 @@
 }
 
 .banner__img-box {
-  background-image: url('./src/images/banner-img.png');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  max-width: 1552px;
-  position: relative;
-  width: 100%;
-  margin: 0 auto;
-  height: 100vh;
-  max-height: 841px;
-  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-  @include mq(1921, min) {
-    max-width: 80.833vw;
-    max-height: 43.80208333vw;
+  img {
+    max-width: 100%;
   }
 }

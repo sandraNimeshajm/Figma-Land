@@ -57,8 +57,12 @@
 }
 
 .gallery__items {
-  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+  grid-gap: 33px;
   margin-bottom: 44px;
+  width: 100%;
+
   @include mq(1921, min) {
     margin-bottom: 2.291666667vw;
   }
@@ -67,38 +71,11 @@
   }
 }
 
-.gallery__items-top {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
-  grid-gap: 33px;
-  margin-bottom: 44px;
+.gallery__item {
   @include mq(1921, min) {
-    grid-template-columns: repeat(auto-fit, minmax(11.71875vw, 1fr));
-    grid-gap: 1.71875vw;
-    margin-bottom: 2.291666667vw;
-  }
-  @include mq(1030) {
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
-
-.gallery__items-bottom {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 33px;
-  @include mq(1921, min) {
-    grid-gap: 1.71875vw;
-  }
-  @include mq(1030) {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  .gallery__item {
-    @include mq(1921, min) {
-      max-height: 14.843vw;
-      height: 100vh;
-      width: auto;
-    }
+    max-height: 14.843vw;
+    height: 100vh;
+    width: auto;
   }
 }
 

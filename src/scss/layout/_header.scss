@@ -42,9 +42,11 @@
 
 .header__logo {
   margin-right: 126px;
-
   @include mq(1921, min) {
     margin-right: 6.5625vw;
+  }
+  @include mq(768) {
+    margin-right: 24px;
   }
 }
 
@@ -137,7 +139,7 @@
     height: 100vh;
     position: absolute;
     top: 0;
-    right: -100%;
+    right: -200%;
     padding: 90px;
     background: $dark;
     transition: all 0.3s;
