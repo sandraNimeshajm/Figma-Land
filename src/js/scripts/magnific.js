@@ -24,8 +24,6 @@ const magnific = () => {
       },
     },
   });
-
-  console.log('testr');
 };
 
 export default magnific;
